@@ -1,8 +1,7 @@
-import { CartButton, NavContainer, PlaceButton } from "./styles";
+import { CartButton, NavContainer, PlaceSchedule } from "./styles";
 import Logo from "../../assets/Logo.svg"
 import { Link } from "react-router-dom";
-import { ShoppingCartSimple } from "@phosphor-icons/react"
-import { MapPin } from "@phosphor-icons/react/dist/ssr/MapPin";
+import { ShoppingCartSimple, MapPin } from "@phosphor-icons/react"
 
 export default function Navbar(){
 
@@ -12,14 +11,14 @@ export default function Navbar(){
             <img src={Logo}/>
 
             <span>
-                <PlaceButton>
-                    <MapPin size="1.25rem" weight="fill" />
+                <PlaceSchedule>
+                    <MapPin weight="fill" />
                     Porto Alegre, RS
-                </PlaceButton>
+                </PlaceSchedule>
 
                 <Link to={"/checkout"}>
-                    <CartButton>
-                        <ShoppingCartSimple weight="fill" size="1.25rem"/>
+                    <CartButton products={0}>
+                        <ShoppingCartSimple weight="fill"/>
                     </CartButton>
                 </Link>
                 

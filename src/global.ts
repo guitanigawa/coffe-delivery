@@ -9,18 +9,18 @@ export const GlobalStyle = createGlobalStyle`
 
         font-family: "Roboto", sans-serif;
         font-size: 1rem;
-
+        line-height: 130%
     }
 
 
     body{
         background-color:  ${({theme}) => theme.colors["background"]};
 
-        padding: 0 3rem;
+        padding: 0 10rem;
     }
 
     #root{
-        max-width: 100rem;
+        max-width: 70rem;
 
         margin: auto
     }
